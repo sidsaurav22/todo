@@ -1,0 +1,39 @@
+
+/*basic reset*/
+* {margin: 0; padding: 0; text-decoration: none; outline:0;}
+
+html {
+	height: 100%;
+}
+/*form styles*/
+#msform {
+	text-align: center;
+}
+
+#msform .formPart {
+	margin-top:25%;
+	border: 2px solid black;
+}
+#msform .formPart form{
+  padding: 20px 10px;
+}
+#msform .formPart .formData{
+  padding: 20px 10px;
+}
+#msform .formPart:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 0 none;
+	width: 100%;
+	color: #2C3E50;
+	font-size: 13px;
+}
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}

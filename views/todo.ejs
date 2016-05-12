@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/todo.css">
+    <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.min.css">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div>
+        <form  method="post">
+          <input id="title" type="text" class="form-control" name="title" placeholder="title">
+          <input id="address" class="form-control" type="text" name="location" placeholder="Enter a location">
+          <input id="datetimepicker" class="form-control" type="text" >
+          <input id="addTODO" type="submit" class="form-control">
+        </form>
+      </div>
+      <div class="">
+        <%for(i=0; i<todo.length; i++){%>
+        <div class="" style="border:1px solid black">
+
+          Title:<%= todo[i].title %>
+          location:<%= todo[i].location%>
+          date, time:<%= new Date(todo[i].timestamp)%>
+
+        </div>
+        <%}%>
+      </div>
+
+    </div>
+
+    <script src="/jquery.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/dist/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead-addresspicker/0.1.4/typeahead-addresspicker.min.js"></script>
+    <script src="/jquery.datetimepicker.full.min.js"></script>
+    <script src="/todo.js"></script>
+  </body>
+</html>
